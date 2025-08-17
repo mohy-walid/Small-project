@@ -1,36 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Team1</title>
 </head>
+
 <body>
     <header>
         <!-- Navbar content -->
         <div class="container">
-     <nav>
-            <h2> W3C</h2>
-            <ul style="list-style-type: none; display: flex; gap: 20px ">
-                <li> <a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li> <a href="content">content</a></li>
-            </ul>
-        </nav>
-        <article>
-        <h1>welcome to W3C</h1>
-        <p>W3C is the World Wide Web Consortium, an international community that develops open standards to ensure the long-term growth of the Web.</p> 
-        </article>
+            <nav>
+                <h2> W3C</h2>
+                <ul style="list-style-type: none; display: flex; gap: 20px ">
+                    <li> <a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li> <a href="#content">content</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <article id="home">
+                <h1>welcome to W3C</h1>
+                <p>W3C is the World Wide Web Consortium, an international community that develops open standards to
+                    ensure the long-term growth of the Web.</p>
+            </article>
         </div>
     </header>
     <main>
-        <section class="section1">
-            <div class="container">
-             <h2>What We Do</h2>
-            <p>We lead the Web to its full potential by developing protocols and guidelines that ensure long-term growth for the Web.</p>
-            </div>
+        <section class="accordion" id="about">
+            <details>
+                <summary>What We Do</summary>
+                <p>We lead the Web to its full potential by developing protocols and guidelines that ensure long-term
+                    growth for the Web.</p>
+            </details>
+
+            <details>
+                <summary>About Us</summary>
+                <p>W3C is the World Wide Web Consortium, an international community that develops open standards to
+                    ensure the Web’s growth.</p>
+            </details>
+
+            <details>
+                <summary>Join Us</summary>
+                <p>Become a member of W3C to contribute to the future of the Web.</p>
+            </details>
         </section>
+        <section id="content">
+  <div class="card">
+    <h3>HTML</h3>
+    <p>HTML is the standard markup language for creating the structure of web pages.</p>
+  </div>
+
+  <div class="card">
+    <h3>CSS</h3>
+    <p>CSS is used to style and design web pages, controlling layout, colors, and fonts.</p>
+  </div>
+
+  <div class="card">
+    <h3>JavaScript</h3>
+    <p>JavaScript adds interactivity and dynamic behavior to web pages.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="images/Screenshot 2025-08-07 091238.png" alt="Project 1">
+      <h3>Project One</h3>
+      <p>Calculator with html ,css and javascript.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Project Two</h3>
+      <p>Short description about project two.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project3.jpg" alt="Project 3">
+      <h3>Project Three</h3>
+      <p>Short description about project three.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project4.jpg" alt="Project 4">
+      <h3>Project Four</h3>
+      <p>Short description about project four.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project5.jpg" alt="Project 5">
+      <h3>Project Five</h3>
+      <p>Short description about project five.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+  </div>
+</section>
+
         <aside>
             <div class="container">
                 <h3>Latest News</h3>
@@ -39,25 +112,13 @@
                     <li>Upcoming Web Conference</li>
                     <li>Web Accessibility Updates</li>
                 </ul>
-                </div>
+            </div>
         </aside>
-
-            <section class="section2">
-            <div class="container">
-        <h2>What About</h2>
-            <p>We lead the Web to its full potential by developing protocols and guidelines that ensure long-term growth for the Web.</p>
-            </div>
-        </section>
-        <section class="section3">
-            <div class="container">
-           <h2>Join Us</h2>
-                <p>Become a member of W3C to contribute to the future of the Web.</p>
-            </div>
-        </section>
         <footer>
             <div class="container">
                 <p>&copy; 2023 W3C. All rights reserved.</p>
-                <ul style="list-style-type: none; display: flex; gap: 20px; justify-content: center; margin: 0; padding: 0;">
+                <ul
+                    style="list-style-type: none; display: flex; gap: 20px; justify-content: center; margin: 0; padding: 0;">
                     <li>Privacy Policy</li>
                     <li>Terms of Use</li>
                     <li>Contact Us</li>
@@ -66,4 +127,5 @@
         </footer>
     </main>
 </body>
+
 </html>
